@@ -6,9 +6,8 @@ from pages.signup_page import SignUpBasePage
 from utils.locators import *
 
 
-# Page objects are written in this module.
-# Depends on the page functionality we can have more functions for new classes
-
+# Đối tượng trang được viết trong mô-đun này.
+# Tùy thuộc vào chức năng của trang, chúng ta có thể có nhiều chức năng hơn cho các lớp mới
 class MainPage(BasePage):
     def __init__(self, driver):
         self.locator = MainPageLocators

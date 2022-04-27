@@ -20,6 +20,13 @@ class LoginPageLocators(object):
     ERROR_MESSAGE = (By.ID, 'message_error')
 
 
+class SingUpLocators(object):
+    EMAIL = (By.ID, 'ap_email')
+    PASSWORD = (By.ID, 'ap_password')
+    SUBMIT = (By.ID, 'signInSubmit-input')
+    ERROR_MESSAGE = (By.ID, 'message_error')
+
+
 class HelpPageLocators(object):
     HELPSEARCH = (By.XPATH, '//input[@id=\'helpsearch\']')
     PAYMENTMETHODTEXT = (By.XPATH, '// h2[contains(text(), \'Manage Payment Methods\')]')

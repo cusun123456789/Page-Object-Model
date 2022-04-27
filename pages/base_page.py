@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 
-# this Base class is serving basic attributes for every single page inherited from Page class
+# này đang cung cấp các thuộc tính cơ bản cho mọi trang đơn lẻ được kế thừa từ test và page
 class BasePage(object):
     def __init__(self, driver, base_url='https://www.amazon.com/'):
         self.base_url = base_url
