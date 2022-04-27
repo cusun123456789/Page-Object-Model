@@ -2,12 +2,12 @@ from operator import itemgetter
 
 # we can store test data in this module like users
 users = [
-    {"name": "invalid_user", "email": "invalidUser@test.com", "password": "qwert1235"},
-    {"name": "valid_user", "email": "validUser@yahoo.com", "password": "ValidPassword"},
-    {"name": "Staff2", "email": "staff@test.com", "password": "qwert1235"},
-    {"name": "Admin0", "email": "admin@test.com", "password": "qwert1234"},
-    {"name": "Admin1", "email": "admin@test.com", "password": "qwert1234"},
-    {"name": "Admin2", "email": "admin@test.com", "password": "qwert1234"},
+    {"name": "invalid_user", "email": "congquyet0808@gmail.com", "password": "quyet2k1"},
+    # {"name": "valid_user", "email": "validUser@yahoo.com", "password": "ValidPassword"},
+    # {"name": "Staff2", "email": "staff@test.com", "password": "qwert1235"},
+    # {"name": "Admin0", "email": "admin@test.com", "password": "qwert1234"},
+    # {"name": "Admin1", "email": "admin@test.com", "password": "qwert1234"},
+    # {"name": "Admin2", "email": "admin@test.com", "password": "qwert1234"},
 ]
 
 

@@ -23,16 +23,21 @@ class TestSignInPage(BaseTest):
         self.driver.save_screenshot('AfterSearch.png')
         self.assertIn("samsung", search_result)
 
-    def test_sign_up_button(self):
-        print("\n" + str(test_cases(2)))
-        page = MainPage(self.driver)
-        sign_up_page = page.click_sign_up_button()
-        self.assertIn("ap/register", sign_up_page.get_url())
+
+    # def test_sign_up_button(self):
+    #     print("\n" + str(test_cases(2)))
+    #     page = MainPage(self.driver)
+    #     self.driver.save_screenshot('BeforeSingUp.png')
+    #     sign_up_page = page.click_sign_up_button()
+    #     self.driver.save_screenshot('AfterSingUp.png')
+    #     self.assertIn("ap/register", sign_up_page.get_url())
 
     def test_sign_in_button(self):
         print("\n" + str(test_cases(3)))
         page = MainPage(self.driver)
+        self.driver.save_screenshot('BeforeSingIn.png')
         login_page = page.click_sign_in_button()
+        self.driver.save_screenshot('AfterSingIn.png')
         self.assertIn("ap/signin", login_page.get_url())
 
     def test_sign_in_with_valid_user(self):
