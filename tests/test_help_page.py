@@ -13,7 +13,8 @@ class TestHelpPage(BaseTest):
         helpPage = page.navigate_help_page()
 
         # Step02: Enter 'payment' into search text box
-        helpPage.enter_search_question('payment method')
+        helpPage.enter_search_question('location')
+        self.driver.save_screenshot('AfterHelpPage.png')
 
         # Step03: Verify the return result
         paymentText = helpPage.get_text_result()

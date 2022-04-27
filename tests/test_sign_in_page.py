@@ -13,8 +13,8 @@ class TestSignInPage(BaseTest):
     def test_sign_in_button(self):
         print("\n" + str(test_cases(3)))
         page = MainPage(self.driver)
-        self.driver.save_screenshot('BeforeSingIn.png')
         login_page = page.click_sign_in_button()
+        self.driver.save_screenshot('BeforeSingIn.png')
         self.driver.find_element_by_id("ap_email").send_keys("congquyet0808@gmail.com")
         self.driver.find_element_by_id("continue").click()
         self.driver.find_element_by_id("ap_password").send_keys("quyet2k1")

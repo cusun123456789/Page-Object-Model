@@ -9,5 +9,5 @@ class TestSearchPage(BaseTest):
         page = MainPage(self.driver)
         self.driver.save_screenshot('BeforeSearch.png')
         search_result = page.search_item("samsung")
-        self.driver.save_screenshot('AfterSearch.png')
         self.assertIn("samsung", search_result)
+        self.driver.save_screenshot('AfterSearch.png')
